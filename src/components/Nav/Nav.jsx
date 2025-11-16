@@ -17,11 +17,12 @@ export const Nav = () => {
             <li>
                 <Link to={"./category/salado"}>Salado</Link>
             </li>
-            <li className="opcion-carrito">
-                <Link >Carrito</Link>
+            <li className="cart-container">
+                <Link to={"/carrito"}>Carrito
                 {getTotalItems() > 0 && (
                     <span className="in-cart">{getTotalItems()}</span>
                 )}
+                </Link>
             </li>
         </ul>
     </nav>
